@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
-import "../styles/blog.module.css";
+import blogStyles from "../styles/Blog.module.css";
 
 const Blog: NextPage = () => {
   const [posts, setPosts] = useState([]);
@@ -55,8 +55,8 @@ const Blog: NextPage = () => {
 
   return (
     <>
-      <div className="blog__section">
-        <div className="create__form">
+      <div className={blogStyles.blog__section}>
+        <div className={blogStyles.blog__form}>
           <input
             type="text"
             placeholder="Title"
