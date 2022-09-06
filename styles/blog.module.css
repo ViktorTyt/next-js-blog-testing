@@ -1,0 +1,10 @@
+.blog__section {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.blog__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
